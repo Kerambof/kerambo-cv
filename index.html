@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerambo Francis | Interactive CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    nav {
+      background: #2c3e50;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 15px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #1abc9c;
+    }
+
+    section {
+      padding: 60px 20px;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .about { background: #e3f2fd; }
+    .objective { background: #e8f5e9; }
+    .skills { background: #f3e5f5; }
+    .education { background: #fff9c4; }
+    .projects { background: #ffebee; }
+    .contact { background: #e0f7fa; }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .project {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 5px solid #2980b9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .apk-download, .whatsapp-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .apk-download:hover, .whatsapp-btn:hover {
+      background: #219150;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 50px 0 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="about">
+    <img src="WhatsApp Image 2025-07-10 at 18.49.09_0692c8b0.jpg" alt="Kerambo Francis" class="profile-pic">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Kerambo Francis</strong>, a passionate Computer Science student at Kaimosi Friends University with strong interests in mobile app development, web technologies, and systems thinking.</p>
+    <p>I love creating tools that simplify life. One of my top projects is <strong>V-SIM</strong> — a mobile app that allows users to manage multiple phone numbers from one device.</p>
+  </section>
+
+  <section id="objective" class="objective">
+    <h2>Career Objective</h2>
+    <p>To grow as a full-stack developer by solving real-life problems using software and hardware integration, and to contribute to Kenya’s digital transformation through innovation and leadership.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>PC Maintenance (Hardware & Software)</li>
+      <li>Website Development</li>
+      <li>Mobile App Development</li>
+      <li>Computer Networking</li>
+      <li>Database Management</li>
+    </ul>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p><strong>Kaimosi Friends University</strong><br/> BSc in Computer Science, 2023 – Present</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>1. Portfolio Website</h3>
+      <p>A fully responsive personal portfolio website using HTML, CSS, and JavaScript, showcasing skills, education, and projects.</p>
+      <p><a href="https://studio-website-rose.vercel.app" target="_blank">🔗 View Live</a></p>
+    </div>
+
+    <div class="project">
+      <h3>2. Mobile App – V-SIM</h3>
+      <p>Enables users to register and use multiple virtual numbers on a single SIM. Features registration, login, switching, and routing.</p>
+      <p><strong>Status:</strong> 🚧 In Development</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kerambofrancis7@gmail.com">kerambofrancis7@gmail.com</a></p>
+    <p>Phone: +254757326142</p>
+    <p>Location: Migori County, Kenya</p>
+    <a href="https://wa.me/254757326142?text=Hello%20Francis" target="_blank" class="whatsapp-btn">💬 Message on WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Kerambo Francis | Built with 💻
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+
+</body>
+</html>
